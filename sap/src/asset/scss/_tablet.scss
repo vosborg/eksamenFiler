@@ -1,0 +1,11 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.newCollectionTabletXl{
+    display: none;
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .newCollectionTabletXl{
+        @include smallCollectionHeader;
+    }
+}

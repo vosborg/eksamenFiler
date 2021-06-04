@@ -1,0 +1,273 @@
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+/*----------TABLET START----------*/
+
+  :root {
+    --baggrundsfarve: #1b1b1b;
+    --sekundaerfarve: #1e1c1c;
+    --tredjefarve: #20232c;
+    --accentfarve: #f5dd98;
+    --tekstfarve: #ffffff;
+    --tekstfarve2: #1b1b1b;
+    --headerSize: calc(2.5rem + 1.5vw);
+    --pFont: "Oswald", sans-serif;
+    --headerFont: druk, sans-serif;
+    --loadBackground: #303032;
+    --loadLight: #f8f8f8;
+    --pLineHeight: calc(1.3em + 0.5vw);
+    --headerLineHeight: calc(0.8em + 1vw);
+    --pSize: calc(0.75em + 0.4vw);
+    --headerSpacer: 110px;
+  }
+  
+  .navColor {
+    background-color: black;
+  }
+  
+  /*-------- FORSIDE START -------*/
+  .navbar-brand {
+    padding-left: 26.112px;
+  }
+  
+  .PlayerCardPictures {
+    width: 100%;
+  }
+
+  .newCollectionHeader{
+    display: none;
+  }
+  
+  .tabletXlHeading {
+    font-size: 70px;
+    font-family: druk;
+    letter-spacing: 3px;
+    margin-top: 20px;
+  }
+  
+  .newCollectionButton {
+    margin-bottom: 30px;
+  }
+  
+  
+  .news {
+    margin-left: 100px;
+  }
+  
+  .newsArticle .articleImg::before {
+    display: none;
+  }
+  
+  .articleHeading {
+    top: calc(99% + 10px);
+    right: calc(1% - 10px);
+  }
+  
+  .articleHeaderFrontPage {
+    top: calc(100% - 10px);
+    right: calc(1% - 10px);
+    font-size: 23px;
+  }
+  
+  
+  .newsArticle .article2Img::before {
+    display: none;
+  }
+  
+  .articleHeading2 {
+    top: calc(99% + 10px);
+    right: calc(0% - 10px);
+  }
+  
+  .articleHeaderFrontPage2 {
+    top: calc(100% - 10px);
+    right: calc(0% - 10px);
+    font-size: 23px;
+  }
+
+  
+  .article2Img {
+    margin-top: 70px;
+  }
+  
+  .newsArticle .article3Img::before {
+    display: none;
+  }
+  
+  .articleHeading3 {
+    top: calc(99% + 10px);
+    right: calc(0% - 10px);
+  }
+  
+  .articleHeaderFrontPage3 {
+    top: calc(100% - 10px);
+    right: calc(0% - 10px);
+    font-size: 23px;
+  }
+  
+
+  
+  .article3Img {
+    margin-top: 70px;
+  }
+
+  .article3Img img {
+    width: 80%;
+  }
+  
+  .article4Img img {
+    width: 80%;
+  }
+  
+  .articleHeading4 {
+    top: calc(103% - 10px);
+  }
+  
+  .articleHeaderFrontPage4 {
+    top: calc(101% - 10px);
+  
+    font-size: 23px;
+  }
+  
+  .articleHeaderFrontpage4 span {
+    display: table;
+  }
+  
+ 
+  
+  .spacerFrontPage {
+    padding-bottom: 350px;
+  }
+  
+  /*----------FOOTER START----------*/
+  .someBig {
+    display: none;
+  }
+  
+  .sponsorLogo {
+    margin-bottom: 30px;
+  }
+  
+  .someSmall {
+    display: block;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .footer-logo img {
+    width: 125px;
+    height: auto;
+  }
+  
+  .MobileSection {
+    display: block;
+  }
+  
+  .laptopSection {
+    display: none;
+  }
+  /*----------FOOTER SLUT----------*/
+  
+  /*---------- FORSIDE SLUT ----------*/
+  
+  /*---------- NYHEDER SECTION  ----------*/
+  
+  .articleQuoteSign  {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .articleStatement {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  /*----------NYESTE NYHEDER - SEKTION  ----------*/
+  
+  .lastNewsDate {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  .lastNewsTitle {
+    font-size: 20px;
+  }
+  
+  .lastNews-Btn {
+    margin-top: 1px;
+  }
+  /*----------NYHEDER SLUT ----------*/
+  
+  /*------- Ownership START --------*/
+  
+  .ownershipHeader {
+    background-color: #000;
+    color: var(--tekstfarve);
+  }
+  
+  .ownershipHeading {
+    font-family: druk;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 26px 0 26px 0;
+  }
+  
+  .cardOwnership {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0;
+    box-shadow: 0 1px 3px rgba(245, 221, 152, 0.12),
+      0 1px 2px rgba(245, 221, 152, 0.24);
+  }
+  
+  .card-container {
+    margin-top: 70px;
+  }
+  /*------- Ownership SLUT --------*/
+  
+  /*--------OM START---------*/
+  .aboutLogo {
+    display: none;
+  }
+  
+  .aboutTextLight h2,
+  .aboutTextDark h2 {
+    padding-top: 10px !important;
+  }
+  
+  .tidslinje {
+    width: 80px;
+  }
+  
+  .aboutPics {
+    width: 100%;
+  }
+  
+  /*-------- OM SLUT---------*/
+  
+  /*------- VÆRDIER --------*/
+  .valueHeaderPic {
+    height: 70vw;
+  }
+  
+  /*---------- Team START----------*/
+  
+  .imgTitle{
+    left: 90px;
+  }
+  
+  .imgTitle h1{
+    font-size: calc(2em + 5vw);
+  }
+  
+  .imgTitle h5{
+    font-size: calc(2em + 0.6vw);
+  }
+  
+  /*----------Team SLUT----------*/
+
+/*----------TABLET SLUT----------*/
+}

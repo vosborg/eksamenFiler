@@ -1,0 +1,155 @@
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+  :root {
+    --baggrundsfarve: #1b1b1b;
+    --sekundaerfarve: #1e1c1c;
+    --tredjefarve: #20232c;
+    --accentfarve: #f5dd98;
+    --tekstfarve: #ffffff;
+    --tekstfarve2: #1b1b1b;
+    --headerSize: calc(2.5rem + 1.5vw);
+    --pFont: "Oswald", sans-serif;
+    --headerFont: druk, sans-serif;
+    --loadBackground: #303032;
+    --loadLight: #f8f8f8;
+    --pLineHeight: calc(1.3em + 0.5vw);
+    --headerLineHeight: calc(0.8em + 1vw);
+    --pSize: calc(0.75em + 0.4vw);
+    --headerSpacer: 110px;
+  }
+  
+  /*----- FORSIDE START Computer version display none ------*/
+ 
+  .newCollectionHeader{
+    display: none;
+  }
+  .newCollectionHeader h3 {
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-left: 0;
+    font-family: var(--headerFont);
+    letter-spacing: 3px;
+    font-size: 13vmin;
+    color: var(--tekstfarve);
+  }
+  
+  
+  .tabletXlHeading {
+    font-size: 80px;
+    font-family: var(--headerFont);
+    letter-spacing: 3px;
+    margin-top: 20px;
+  }
+  
+ 
+  
+  .newCollection {
+    margin-bottom: 20px;
+  }
+  
+  .news {
+    margin-left: 100px;
+  }
+  
+  
+  .article4Img img {
+    width: 80%;
+  }
+  
+  .articleHeading4 {
+    top: calc(103% - 10px);
+    left: calc(2% - 10px);
+  }
+  
+  .articleHeaderFrontPage4 {
+    top: calc(101% - 10px);
+    left: calc(2% - 10px);
+  }
+  
+  .articleHeaderFrontPage4 span {
+    display: table;
+  }
+  
+  
+  .spacerFrontPage {
+    padding-bottom: 350px;
+  }
+  
+  /*----------- FORSIDE SLUT ----------*/
+  
+  /*----------- FOOTER START ----------*/
+  
+  .sponsorLogo {
+    margin-bottom: 20px;
+  }
+  /*----------- FOOTER SLUT ----------*/
+  
+  /*---------- NYHEDER START ----------*/
+  
+  /*---------- Nyheder SECTION  ----------*/
+  
+  .articleQuoteSign {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .articleStatement {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  /*---------- NYESTE NYHEDER - SEKTION  ----------*/
+  
+  .lastNewsDate {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  .lastNewsTitle  {
+    font-size: 20px;
+  }
+  
+  .lastNews-Btn {
+    margin-top: 1px;
+  }
+  /*----------NYHEDER SLUT ----------*/
+  
+  /*----- Ownership START -----*/
+  .card-space {
+    margin-bottom: 25px;
+  }
+  
+  .cardOwnership {
+    width: 19rem;
+  }
+  
+  /*----- Ownership SLUT  -----*/
+  
+  /*----------OM START  ----------*/
+  
+  .aboutLogo {
+    width: 70px;
+    height: 70px;
+    left: calc(50% - 35px);
+    top: calc(50% - 10px);
+    font-size: 16px;
+  }
+  
+  
+  /*----------OM SLUT  ----------*/
+  
+  .footerLogo {
+    width: 100%;
+  }
+  
+  
+  /*----------HOLDET START----------*/
+  
+  .imgTitle h5{
+    font-size: calc(0.8em + 0.6vw);;
+  }
+  
+  /*----------HOLDET SLUT----------*/
+  
+}

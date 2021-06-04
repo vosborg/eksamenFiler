@@ -1,0 +1,84 @@
+@mixin shopButton {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+}
+
+@mixin mainButton {
+    z-index: 3;
+    padding: 0 27px;
+    height: 48px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: transparent;
+    color: $tekstfarve;
+    border: 2px solid $tekstfarve;
+    cursor: pointer;
+    font-family: acumin pro, sans-serif;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: $tekstfarve;
+    
+
+    &:hover {
+        background-color: $tekstfarve;
+
+        a {
+            color: $tekstfarve2;
+        }
+        i{
+            color: $tekstfarve2;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $tekstfarve;
+
+        &:hover {
+            color: $tekstfarve2;
+        }
+    }
+}
+
+@mixin smallCollectionHeader{
+    display: flex;
+    justify-content: center;
+    color: $tekstfarve;
+}
+
+@mixin yellowBox{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background-color: $accentfarve;
+}
+
+@mixin yellowBoxSmall{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    width: 80%;
+    height: 100%;
+}
+
+@mixin articleHeaderDate{
+    position: relative;
+    z-index: 3;
+    color: $tekstfarve;
+    font-size: 20px;
+    font-family: $headerFont;
+}
+
+@mixin articleHeader{
+    position: relative;
+    z-index: 3;
+    color: $tekstfarve;
+    font-size: 30px;
+    font-family: $headerFont;
+}
+

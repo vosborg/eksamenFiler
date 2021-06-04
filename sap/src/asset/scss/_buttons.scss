@@ -1,0 +1,235 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+/*---------ShpButton start----------*/
+.shopbtn {
+    margin-right: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 5px 27px;
+    text-align: center;
+    font-size: 16.5px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $tekstfarve2;
+    background: #ff4f00;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: din-condensed, sans-serif;
+
+    &::after {
+        @include shopButton;
+        top: -9px;
+        left: -9px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    &::before {
+        @include shopButton;
+        bottom: -9px;
+        right: -9px;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+
+    &:hover {
+        color: black;
+        background: #cc3f00;
+        border-color: #cc3f00;
+
+        &::after,
+        &::before {
+            width: 30px;
+            height: 30px;
+            border-color: #cc3f00;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .shopbtn {
+        display: none;
+    }
+}
+
+/*---------ShpButton End----------*/
+
+/*---------MainButton start----------*/
+.articleFrontPage, button{
+    @media only screen and (max-width: 479px) {
+       margin-bottom: 20px ;
+    }
+}
+
+.articleOne {
+    position: relative;
+    display: block;
+    top: calc(85% - 10px);
+    right: calc(35% - 1px);
+
+    &__Btn {
+        @include mainButton;
+    }
+}
+
+.articleTwo {
+    position: relative;
+    display: block;
+    top: calc(85% - 10px);
+    right: calc(20% - 1px);
+
+    &__Btn {
+        z-index:-1;
+        @include mainButton;
+    }
+}
+
+.articleThree {
+    position: relative;
+    display: block;
+    top: calc(87% - 10px);
+    right: calc(1% - 1px);
+
+    &__Btn {
+        @include mainButton;
+    }
+}
+
+.articleFour {
+    position: relative;
+    display: block;
+    top: calc(85% - 10px);
+    left: calc(7% - 18px);
+
+    &__Btn {
+        @include mainButton;
+    }
+}
+
+.newCollection {
+    margin-top: 40px;
+
+    &__Btn {
+        @include mainButton;
+        
+        &:hover{
+            background-color: $tekstfarve2;
+        }
+        &:hover a{
+            color: $tekstfarve;
+        }
+        a {
+            color: $tekstfarve2;
+           
+        }
+        border: 2px solid $tekstfarve2;
+        ;
+    }
+}
+
+
+.lastNews {
+    &__Btn {
+        @include mainButton;
+    }
+}
+
+.ownership {
+    vertical-align: bottom;
+    border-radius: 0;
+    &__Btn {
+        @include mainButton;
+        padding: 5px 35px;
+    }
+
+}
+
+.caseButton{
+    &__Btn{
+        @include mainButton;
+        border: 2px solid $tekstfarve2;
+        color: $tekstfarve2;
+        &:hover{
+            background-color: $tekstfarve2;
+            color: $tekstfarve;
+        }
+    }
+}
+
+.contact {
+    &__Btn {
+        border-radius: 0%;
+        width: 100%;
+        line-height: 48px;
+        @include mainButton;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+/*-------Mobile-----*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    .articleOne,
+    .articleTwo,
+    .articleThree {
+        top: calc(102.5% - 10px);
+        right: calc(0% - 10px);
+    }
+
+    .articleFour {
+        position: relative;
+        top: calc(105% - 10px);
+        left: calc(0% - 10px);
+    }
+
+}
+
+/*-------Tablet-----*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .articleOne {
+        top: calc(101% - 10px);
+        right: calc(1% - 2px);
+    }
+
+    .articleTwo,
+    .articleThree {
+        top: calc(101% - 10px);
+        right: calc(0% - 2px);
+    }
+
+    .articleFour {
+        position: relative;
+        top: calc(103% - 10px);
+    }
+}
+
+/*-------XL Tablet-----*/
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+    .articleOne,
+    .articleTwo,
+    .articleThree {
+        top: calc(102% - 10px);
+        right: calc(0% - 10px);
+    }
+
+    .articleFour {
+        position: relative;
+        top: calc(101% - 10px);
+        left: calc(2% - 10px);
+    }
+
+    .newCollection {
+        margin-bottom: 20px;
+    }
+}
+/*---------MainButton End----------*/

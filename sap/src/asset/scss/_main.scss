@@ -1,0 +1,440 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+
+/*-------GLOBAL TAGS START--------*/
+
+.spacer{
+    padding-bottom: 80px;
+}
+
+/*-------GLOBAL TAGS END--------*/
+
+/*-------Article section frontpage START--------*/
+
+.articleFrontPage {
+    &__headingDate {
+        @include articleHeaderDate;
+        &--dateOne{
+            top: calc(86% - 10px);
+            right: calc(35% - 10px);
+        }
+        &--dateTwo{
+            top: calc(86% - 10px);
+            right: calc(20% - 10px);
+        }
+        &--dateThree{
+            top: calc(88% - 10px);
+            right: calc(1% - 10px);
+        }
+        &--dateFour{
+          top: calc(86% - 10px);
+          left: calc(7% - 10px);
+         
+        }
+        
+        @media only screen and (min-width: 320px) and (max-width: 1024px) {
+            top: calc(100% + 10px);
+            right: calc(-1% - 4px);
+        }
+    }
+    &__heading {
+        @include articleHeader;
+        font-size: 36px;
+
+        &--headingOne{
+            top: calc(84% - 10px);
+            right: calc(35% - 10px);
+        }
+        &--headingTwo{
+            top: calc(84% - 10px);
+            right: calc(20% - 10px);
+        }
+        &--headingThree{
+            top: calc(86% - 10px);
+            right: calc(1% - 10px);
+        }
+        &--headingFour{
+          position:relative;
+            top: calc(84% - 10px);
+            left: calc(7% - 10px);
+            span{
+            display:table;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 479px) {
+            top: calc(100% + 10px);
+            left: calc(30% - 0px);
+                            
+        }
+        }
+        
+        @media only screen and (min-width: 320px) and (max-width: 1024px) {
+            top: calc(101% - 10px);
+            right: calc(-1% - 4px);
+            font-size: 23px;
+        }      
+    }
+    &__img {
+        position: relative;
+        img {
+            position: relative;
+            width: 80%;
+            z-index: 2;
+        }
+        &--imgOne {
+            &:before {
+                @include yellowBox;
+                left: -70px;
+                top: -20px;
+                width: 80%;
+                height: 92%;
+                @media only screen and (min-width: 767px) and (max-width: 1024px) {
+                    @include yellowBoxSmall;
+                }
+                @media only screen and (min-width: 280px) and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        &--imgTwo {
+            &:before {
+                @include yellowBox;
+                width: 90%;
+                height: 100%;
+                right: 55.2323px;
+                bottom: 55.2323px;
+                @media only screen and (min-width: 767px) and (max-width: 1024px) {
+                    @include yellowBoxSmall;
+                }
+                @media only screen and (min-width: 280px) and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        &--imgThree {
+            &:before {
+                @include yellowBox;
+                left: 25px;
+                top: -35px;
+                width: 80%;
+                height: 92%;
+                @media only screen and (min-width: 767px) and (max-width: 1024px) {
+                    @include yellowBoxSmall;
+                }
+                @media only screen and (min-width: 280px) and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        &--imgFour{
+          margin-top: 70px;
+          width: 100%;
+          position: relative;
+        }
+    }
+}
+
+
+
+/*-------Article section frontpage END--------*/
+
+
+/*-------Om Section END--------*/
+
+
+.aboutSection {
+    height: auto !important;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transition: background-position 0.2s ease;
+    color: var(--tekstfarve);
+  }
+
+.about{
+    &__text{
+        max-height: 2000px;
+        padding: 7%;
+        p{
+            text-align: left;
+            font-family: $pFont;
+            padding-bottom: 20px;
+            font-weight: 300;
+            line-height: $pLineHeight;
+        }
+
+        &--light{
+        color: $tekstfarve;
+        background-color: #101010;
+
+
+        }
+        &--dark{
+        color: $tekstfarve2;
+        background-color: #efefef;
+
+        }
+    }
+    &__header{
+        font-size: calc(1.7rem + 1.2vw);
+        padding-bottom: 20px;
+        font-family: $headerFont;
+        text-align: center;
+    }
+    &__img{
+        object-fit: cover;
+        height: 100%;
+    }
+    &__logo{
+        position: absolute;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        letter-spacing: 0.2em;
+        font-size: 20px;
+        background: var(--tekstfarve);
+        color: #000;
+        border: 2px solid #e5e5e5;
+        text-decoration: none;
+        @media only screen and (min-width: 580px) and (max-width: 768px) {
+                height: 50px;
+                width: 50px;  
+                left: calc(50% - 25px);
+  
+        }
+        @media only screen and (max-width: 579px) {
+                display: none;
+  
+        }
+            img{
+                object-fit: contain;
+                height: 100px;
+                @media only screen and (min-width: 580px) and (max-width: 768px) {
+                    height: 50px;
+                }
+                @media only screen and (max-width: 579px) {
+                    display: none;
+                }
+            }
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutMobile {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mobileHide {
+      display: none;
+    }
+  }
+
+/*-------Om Section END--------*/
+
+/*-------Holdet Section START--------*/
+
+.playerCardBox{
+    position: relative;
+        .PlayerCardPictures {
+            object-fit: cover;
+            height: 100%;
+            width: 90%;
+        }
+        .imgTitle{
+            position: absolute;
+            color: #fff;
+            text-align: left;
+            left: 30px;
+            right: 0;
+            bottom: 10px;
+            font-family: var(--headerFont);
+                h1{
+                    font-size: calc(1.2em + 1vw);
+                }
+                h2{
+                    font-size: calc(1em + 0.6vw);
+                }
+          }
+  }
+  .positionHeading {
+    font-family: var(--headerFont);
+    font-size: var(--headerSize);
+    margin-top: 50px;
+    color: var(--tekstfarve);
+  }
+  
+  .teamHeader {
+    background-color: #000;
+    color: var(--tekstfarve);
+  }
+  
+ 
+  .teamHeading {
+    font-family: var(--headerFont);
+    font-size: var(--headerSize);
+    line-height: 60px;
+    margin-top: var(--headerSpacer);
+  }
+  
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .mobileTeam {
+        text-align: center;
+    }
+
+    .mobilePicture {
+      margin-bottom: 50px;
+    }
+    .imgTitle{
+      left: 50px;
+    }
+
+    .imgTitle h1{
+      font-size: calc(1.5em + 5vw);
+    }
+
+    .imgTitle h5{
+      font-size: calc(1.5em + 0.6vw);
+    }
+  }
+
+/*-------Holdet Section END--------*/
+
+
+/*-------Cases Section START--------*/
+.casesHeading {
+    font-family: $headerFont;
+    font-size: $headerSize;
+    line-height: 60px;
+    margin-top: $headerSpacer;
+  }
+
+  .casesHeader {
+    background-color: #000;
+    color: var(--tekstfarve);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+
+#cases {
+
+    .casesBox {
+        max-width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 6rem 0;
+        padding-bottom: 5rem;
+
+            .casesLink .casesHover {
+                display: flex;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7); 
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity ease-in-out 0.25s;
+                cursor: pointer;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+              }
+
+        .casesHoverContent {
+            font-size: 1rem;
+            color: $accentfarve;
+        }
+
+        .casesLink {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+          }
+
+          .casesCaption {
+            padding: 1.5rem;
+            text-align: center;
+            background-color: #fff;
+            text-align: left;
+          }
+
+          .casesCaptionHeading {
+            font-size: 1.2rem;
+            font-family: $pFont;
+            font-weight: 700;
+          }
+
+          .casesText {
+            font-size: var(--pSize);
+            font-family: var(--pFont);
+            font-weight: 300;
+            line-height: var(--pLineHeight);
+          }
+
+          .casesText {
+            font-size: var(--pSize);
+            font-family: var(--pFont);
+            font-weight: 300;
+            line-height: var(--pLineHeight);
+          }
+      }
+}
+
+.modal-header{
+    background-color: white;
+    color:var(--tekstfarve2);
+    padding-right: 100px;
+  }
+  
+  .modal-title{
+    font-family: oswald;
+    font-size: 32px;
+  }
+  
+  .modal-footer{
+    background-color: white;
+    padding-right: 80px;
+  }
+
+.modalSection{
+
+    .modalSection .row h2{
+        font-family: var(--headerFont);
+      }
+      
+      .modalSection .row p{
+        font-family: var(--pFont);
+      }
+      
+      .modal-body{
+        background-color: white;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .lightRow{
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      
+      .darkRow{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #1E2327;
+        color:var(--tekstfarve);
+      }
+}
+
+/*-------Cases Section END--------*/

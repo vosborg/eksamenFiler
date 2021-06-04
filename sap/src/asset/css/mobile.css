@@ -1,0 +1,281 @@
+/*----------MOBILE----------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  /*--------NAVBAR START-----------*/
+  .navbar-brand {
+    padding-left: 10px;
+  }
+  
+  /*--------NAVBAR SLUT-----------*/
+  
+  /*-------- COOKIES START -----------*/
+  
+  .cookieText {
+    top: 58%;
+  }
+  
+  
+  .cookie-btn {
+    top: 75%;
+  }
+  
+  /*-------- COOKIES SLUT -----------*/
+  
+  /*---------- FORSIDE START ---------*/
+  .newCollection {
+    display: none;
+  }
+  .newCollectionHeader{
+    display: none;
+  }
+ 
+  
+  .tabletXlHeading {
+    font-size: 55px;
+    font-family: druk;
+    letter-spacing: 3px;
+    margin-top: 20px;
+  }
+  
+  .newCollectionButton {
+    margin-bottom: 30px;
+  }
+  
+  .news {
+    margin-left: 1px;
+    text-align: center;
+  }
+  .artikelShadow{ 
+    width: 100%;
+  }
+  
+  .newsArticle .articleImg::before {
+    display: none;
+  }
+  .articleSpacerFrontPage{
+    padding-bottom: 125px;
+  }
+
+  
+
+  
+  
+  
+  .article4Img {
+    margin-top: 70px;
+  }
+  
+  .article4Img img {
+    width: 100%;
+    position: relative;
+  }
+  
+  .articleHeading4 {
+    top: calc(104% - 10px);
+    left: calc(2% - 10px);
+  }
+  
+  .articleHeaderFrontPage4 {
+    top: calc(103.6% - 10px);
+    left: calc(2% - 10px);
+    font-size: 23px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .articleHeaderFrontPage4 span {
+    display: table;
+  }
+  
+
+  
+  .spacerFrontPage {
+    padding-bottom: 350px;
+  }
+  
+  .MobileSection {
+    display: block;
+  }
+  .laptopSection {
+    display: none;
+  }
+  
+  /*---------- FORSIDE SLUT ---------*/
+  
+  
+  .footerSponsor img {
+    padding-bottom: 25px;
+  }
+  .footerKontakt h5{
+    padding-left: 0;
+  }
+  
+  
+  
+  /*----------NYHEDER SECTION  ----------*/
+  
+  /*ÆNDRET*/
+  .artikel-Line {
+    display: none;
+  }
+  
+  .articleQuoteSign {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .articleStatement {
+    font-size: 22px;
+    line-height: 30px;
+    margin-left: 24px;
+  }
+  
+  .articlePic {
+    max-width: 77vw;
+    height: auto;
+  }
+  
+  /*----------NYESTE NYHEDER - SEKTION  ----------*/
+  
+  .lastNewsDate {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .lastNews-Btn {
+    margin-bottom: 20px;
+  }
+  /*----------NYHEDER SLUT ----------*/
+  
+  /*------- Ownership START --------*/
+  .cardOwnership {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /*------- Ownership SLUT --------*/
+  
+  /*-------OM START--------*/
+  .aboutHeading {
+    text-align: center;
+  }
+  
+  .aboutPics {
+    max-height: 300px;
+    width: 100%;
+  }
+  
+  .aboutLogo {
+    display: none;
+  }
+  
+  .content {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  /*-------OM SLUT--------*/
+  
+  /*------- KONTAKT START --------*/
+  .contactMiniTitle {
+    font-family: druk;
+    margin-left: 10px;
+  }
+  
+  .contactTitle {
+    font-family: druk;
+    font-size: 50px;
+    line-height: 45px;
+    margin: 26px 0 26px 10px;
+  }
+  
+  .contactSection {
+    color: var(--tekstfarve);
+    padding: 50px 10px 80px 10px;
+  }
+  
+  .contactSection .contactAddress h3 {
+    margin-top: 60px;
+    margin-left: 1px;
+    color: var(--accentfarve);
+  }
+  
+  .contactSection .contactAddress p {
+    margin-left: 1px;
+  }
+  
+  .border-center {
+    background: var(--accentfarve);
+  }
+  
+  .contactSection .contactInformation .infoContact {
+    margin-left: 1px;
+    color: var(--accentfarve);
+  }
+  /*------- KONTAKT SLUT--------*/
+  
+  .someBig {
+    display: none;
+  }
+  
+  .SoMeList i:hover {
+    opacity: 0.8;
+    color: var(--tekstfarve);
+  }
+  .SoMeList a:before {
+    display: none;
+  }
+  
+  .someSmall {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .footer-logo {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .footer-logo img {
+    width: 125px;
+    height: auto;
+  }
+  
+  /*---------- PARTNER START --------*/
+  .tabs .nav-link h4 {
+    font-size: 12px;
+  }
+  
+  .kasse {
+    padding: 3px;
+  }
+  
+  /*---------- PARTNER SLUT --------*/
+  
+  /*---------- FRIVILLIG START --------*/
+  .voluntaryHeaderPic {
+    height: 80vw;
+    margin-top: 30px;
+    background-position: center;
+  }
+  .voluntaryHeaderPic h1 {
+    top: 30vw;
+  }
+  
+  /*---------- FRIVILLIG SLUT --------*/
+  
+  /*--------VALUUES START-----------*/
+  .valueHeaderPic {
+    margin-top: 10vh;
+  }
+  
+  .valueHeaderPic h1 {
+    padding-bottom: 300px;
+  }
+  
+  /*--------VALUUES SLUT-----------*/
+  
+      
+    
+  }
+  /*----------MOBILE----------*/
